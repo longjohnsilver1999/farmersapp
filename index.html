@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crop Health Monitor AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="top-bar">
+        <div>
+          <p class="eyebrow">AI + Low Bandwidth Ready</p>
+          <h1>Crop Health Monitor</h1>
+          <p class="subtitle">Designed for fast insights even on weak networks.</p>
+        </div>
+        <button class="status-chip" aria-label="Connection status">
+          <span class="dot" aria-hidden="true"></span>
+          Lite Mode On
+        </button>
+      </header>
+
+      <section class="hero-card">
+        <div class="hero-heading">
+          <h2>Maize Plot A7</h2>
+          <span class="confidence">AI confidence: 94%</span>
+        </div>
+        <div class="survival-wrapper">
+          <div class="ring" role="img" aria-label="Crop survival percentage 89 percent">
+            <div class="ring-inner">
+              <span class="big">89%</span>
+              <span>Survival</span>
+            </div>
+          </div>
+          <div class="key-metrics">
+            <article>
+              <h3>Estimated Lifespan</h3>
+              <p>18-24 days</p>
+              <span>before stress risk rises</span>
+            </article>
+            <article>
+              <h3>Yield Potential</h3>
+              <p>+12%</p>
+              <span>if treatment follows plan</span>
+            </article>
+            <article>
+              <h3>Next Scan</h3>
+              <p>In 6 hrs</p>
+              <span>compressed data packet</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-cards">
+        <article class="info-card warning">
+          <h3>Disease Alert</h3>
+          <p class="headline">Early Blight (moderate)</p>
+          <p>Leaf pattern analysis found 3 zones with lesion progression in the past 48h.</p>
+          <ul>
+            <li>Spread probability: <strong>37%</strong></li>
+            <li>Critical window: <strong>Next 2 days</strong></li>
+            <li>Action: targeted fungicide + prune wet leaves</li>
+          </ul>
+        </article>
+
+        <article class="info-card danger">
+          <h3>Pest Alert</h3>
+          <p class="headline">Fall Armyworm presence</p>
+          <p>AI trap and image model detected feeding pattern near row edges.</p>
+          <ul>
+            <li>Infestation level: <strong>Low → Rising</strong></li>
+            <li>Hotspot rows: <strong>4, 5, 8</strong></li>
+            <li>Action: pheromone trap + neem application tonight</li>
+          </ul>
+        </article>
+
+        <article class="info-card success">
+          <h3>What Helps Survival</h3>
+          <p class="headline">Smart Recovery Plan</p>
+          <ul>
+            <li>Water early morning only (save 18% moisture loss)</li>
+            <li>Apply nitrogen micro-dose at 0.4x today</li>
+            <li>Monitor humidity after sunset to prevent fungal burst</li>
+          </ul>
+          <button class="action-btn">Apply AI Plan</button>
+        </article>
+      </section>
+
+      <section class="timeline-card">
+        <h3>Crop Longevity Forecast</h3>
+        <div class="timeline">
+          <div><span>Today</span><p>Healthy zone with manageable stress.</p></div>
+          <div><span>+7 days</span><p>Survival may drop to 82% without treatment.</p></div>
+          <div><span>+14 days</span><p>Potential recovery to 91% with interventions.</p></div>
+          <div><span>+30 days</span><p>Harvest viability remains strong if pests controlled.</p></div>
+        </div>
+      </section>
+
+      <nav class="bottom-nav" aria-label="Primary">
+        <button class="active">Dashboard</button>
+        <button>Diagnose</button>
+        <button>Fields</button>
+        <button>Settings</button>
+      </nav>
+    </main>
+  </body>
+</html>
