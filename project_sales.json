@@ -1,0 +1,96 @@
+{
+  "summaryUpdate": "Backend for an AI-Driven Crop Health Monitor application using Node.js/Express/MongoDB with JWT auth, image upload + AI classification placeholder, advisory engine, diagnosis history, i18n (EN/HI), and SMS fallback (Twilio placeholder), built with MVC structure and production middleware (rate limiting, CORS, Helmet, logging).",
+  "new_feature_requests_to_add": [
+    {
+      "id": "AR-1",
+      "summary": "Implement user authentication (register/login) with JWT-protected routes and User schema (name, phone, email, hashed password, preferredLanguage, location).",
+      "reqIds": [
+        
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Create image upload + diagnosis endpoint POST /api/diagnose using Multer and Cloudinary/local storage, call mock/external AI classifyImage placeholder, store diagnosis in MongoDB, and return diagnosis response payload.",
+      "reqIds": [
+        
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Implement advisory engine using static advisory library JSON keyed by issueType + riskLevel, returning advisory + next 3 days checklist (with translations).",
+      "reqIds": [
+        
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add history endpoint GET /api/history to return logged-in user’s past diagnoses sorted by latest.",
+      "reqIds": [
+        
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Implement multi-language support via i18n with English + Hindi locales and translated advisory messages.",
+      "reqIds": [
+        
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Implement SMS low-bandwidth fallback POST /api/sms/diagnose: parse SMS format, call mock classification, and send SMS reply via Twilio integration placeholder using env vars.",
+      "reqIds": [
+        
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Set up production-ready Express app structure: MVC folder layout, centralized error handler, input validation (express-validator), RESTful routes, async/await patterns.",
+      "reqIds": [
+        
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Add security/ops middleware and tooling: rate limiting, CORS, Helmet, Morgan logging, dotenv config, .env.example, and Axios integration placeholder for external AI APIs.",
+      "reqIds": [
+        
+      ],
+      "status": "pending"
+    }
+  ],
+  "new_feature_requests_to_remove": [
+    
+  ],
+  "architecturalNotesToAdd": [
+    "Do not implement any local ML/CNN model; use mock/external AI classifyImage(imageUrl, cropType) placeholder via Axios.",
+    "Use Node.js + Express with MongoDB (Mongoose) and an MVC folder structure (config/controllers/routes/models/services/middlewares/utils/locales).",
+    "Auth via JWT with password hashing; protect relevant routes.",
+    "Images uploaded via Multer and stored via Cloudinary or local filesystem abstraction.",
+    "Use i18n with at least English and Hindi; advisory/checklist messages must be translatable.",
+    "Include centralized error-handling middleware and request validation using express-validator.",
+    "Include production middleware: rate limiting, CORS, Helmet, Morgan; configuration via dotenv and provide .env.example.",
+    "Twilio SMS integration is a placeholder driven by environment variables; parse inbound SMS format and reply with risk + short advice."
+  ],
+  "architecturalNotesToRemove": [
+    
+  ],
+  "knownIssuesToAdd": [
+    
+  ],
+  "knownIssuesToRemove": [
+    
+  ],
+  "isFixRequest": false,
+  "imageRequirements": null,
+  "generatedImages": null,
+  "gameProjectType": "none",
+  "projectName": "AI-Driven Crop Health Monitor Backend"
+}
